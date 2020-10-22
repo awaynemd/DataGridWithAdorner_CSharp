@@ -35,7 +35,7 @@ namespace DataGridWithAdornerInCSharp
 
         public string LastName { get; set; }
 
-        public IInnerRow Visit { get; set; }
+        public InnerRow Visit { get; set; }
 
         public RelayCommand SaveAppointmentCommand
         {
@@ -97,11 +97,11 @@ namespace DataGridWithAdornerInCSharp
         }
 
         // The Visit is bound to DataGridAnnotationControl.VisitProperty from the DataGridAnnotationAdorner.
-        public IInnerRow Visit { get; set; }
+        public InnerRow Visit { get; set; }
 
     }
 
-    public class InnerRow : ViewModelBase, IInnerRow
+    public class InnerRow : ViewModelBase
     {
         public InnerRow(int i)
         {

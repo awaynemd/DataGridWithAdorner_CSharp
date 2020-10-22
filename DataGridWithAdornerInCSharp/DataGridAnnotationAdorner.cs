@@ -14,7 +14,7 @@ namespace DataGridWithAdornerInCSharp
         private Point _location;
         public DataGridAnnotationControl Control { get; set; }
 
-        public DataGridAnnotationAdorner(Grid adornedDataGrid, IInnerRow visit, object dc)
+        public DataGridAnnotationAdorner(Grid adornedDataGrid, InnerRow visit, object dc)
             : base(adornedDataGrid)
         {           
             Control = new DataGridAnnotationControl();

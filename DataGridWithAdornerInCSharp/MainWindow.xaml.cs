@@ -26,9 +26,9 @@ namespace DataGridWithAdornerInCSharp
         {
             AdornerClose();
 
-            var s = (ListView)sender;
+            var s = (ListView)e.Source;
             Grid fe = (Grid)s.Parent;
-            var selecteditem = (IInnerRow)s.SelectedItem;
+            var selecteditem = (InnerRow)s.SelectedItem;
 
            _adorner = new DataGridAnnotationAdorner(fe, selecteditem, DataContext);
           
