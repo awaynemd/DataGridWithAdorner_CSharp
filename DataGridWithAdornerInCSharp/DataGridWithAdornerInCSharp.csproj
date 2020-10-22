@@ -55,7 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Contracts.cs" />
     <Compile Include="DataGridAnnotationAdorner.cs" />
     <Compile Include="DataGridAnnotationControl.cs" />
     <Compile Include="RelayCommand.cs" />

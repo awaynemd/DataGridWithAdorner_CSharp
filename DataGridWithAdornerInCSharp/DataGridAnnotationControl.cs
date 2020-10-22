@@ -49,16 +49,16 @@ namespace DataGridWithAdornerInCSharp
         public static readonly DependencyProperty LastNameProperty =
             DependencyProperty.Register("LastName", typeof(string), typeof(DataGridAnnotationControl), new PropertyMetadata(string.Empty));
 
-        public IInnerRow Visit
+        public InnerRow Visit
         {
-            get { return (IInnerRow)GetValue(VisitProperty); }
+            get { return (InnerRow)GetValue(VisitProperty); }
             set { SetValue(VisitProperty, value); }
         }
         public static readonly DependencyProperty VisitProperty =
-            DependencyProperty.Register("Visit", typeof(IInnerRow), typeof(DataGridAnnotationControl), new PropertyMetadata(null, (s, e) =>
+            DependencyProperty.Register("Visit", typeof(InnerRow), typeof(DataGridAnnotationControl), new PropertyMetadata(null, (s, e) =>
             {
                 var sender = s as DataGridAnnotationControl;
-                var visit = (IInnerRow)e.NewValue;
+                var visit = (InnerRow)e.NewValue;
 
                 if (visit != null)
                     sender.LastName = visit.LastName;
